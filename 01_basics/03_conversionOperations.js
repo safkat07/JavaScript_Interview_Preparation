@@ -11,12 +11,21 @@ true => 1
 
 let isLoggedIn = 1
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-console.log(booleanIsLoggedIn);
+// console.log(booleanIsLoggedIn);
 
 let someNumber = 33
 // let stringNumber = String(someNumber)
 
-console.log(someNumber);
-console.log(typeof someNumber);
+// console.log(someNumber);
+// console.log(typeof someNumber);
+
+
+
+//---------Operations----------
+
+let value = 3
+let negValue = -value
+console.log(negValue); 
+
 
 
