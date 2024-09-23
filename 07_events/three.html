@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async JS</title>
+</head>
+
+<body>
+    <h1>Hello There two.......</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    const text = document.querySelector('h1')
+    document.querySelector('#start').addEventListener('click', () => {
+        const time = setInterval(() => {
+            let date = new Date()
+            text.innerHTML = date.toLocaleTimeString()
+        }, 1000,);
+    })
+    document.querySelector('stop').addEventListener('click', () => {
+        text.innerHTML = 'hello again'
+        clearInterval(time)
+    })
+</script>

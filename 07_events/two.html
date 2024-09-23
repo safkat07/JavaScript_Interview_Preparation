@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async JS</title>
+</head>
+
+<body>
+    <h1>Hello There.......</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const sayHi = function () {
+    //     console.log('2 sec bad bad');
+    // }
+
+    // setTimeout(sayHi, 2000)
+    const chnageText = () => {
+        document.querySelector('h1').innerHTML = 'Best in this coountry'
+        console.log('best in city');
+
+    }
+
+    const firstText = setInterval(() => {
+        setTimeout(chnageText, 1000)
+    }, 1000)
+
+    // const secondText = setTimeout(function () {
+    //     document.querySelector('h1').innerHTML = 'This is the'
+    // }, 3000)
+
+    document.querySelector('#stop').addEventListener('click', () => {
+        clearTimeout(firstText)
+        console.log('Stopped');
+
+    })
+</script>
+
+</html>
