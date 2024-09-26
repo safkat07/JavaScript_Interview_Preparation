@@ -13,6 +13,7 @@
 
 
 // ==============================|| BRUTEFORCE APPROACH ||============================== //
+// ==============================|| This upper code passed 27 tescases among 273 testcases||============================== //
 
 var mergeTwoLists = function (list1, list2) {
     const linkedListToArray = (list) => {
@@ -47,7 +48,7 @@ var mergeTwoLists = function (list1, list2) {
 
 };
 
-// ==============================|| This code passed 27 tescases among 273 testcases||============================== //
+
 
 
 
